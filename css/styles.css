@@ -12,11 +12,39 @@ a{
     margin-left: 15px;    
 }
 
+h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 22px;
+    color: #725C5C;
+}
+
+h6{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    color: #725C5C;    
+}
+
 .m-0{
     color: gray;
 }
 
-.Page{
+.PageTrabalhos{
+    width: auto;
+    height: 100vh;
+    background-color: aliceblue;         
+}
+
+.tituloTrabalhos{
+    width: auto;
+    height: auto;
+    background-color: #FDF1EB;
+    padding-top: 5px;   
+    padding-left: 20px; 
+}
+
+.PageVazia{
     width: auto;
     height: 100vh;
     background-color: cadetblue;    
@@ -51,8 +79,22 @@ li:hover{
     border-image: linear-gradient(#FFB455, #ED7839) 1 100%;    
 }
 
+.btn{
+    width: 97px;
+    height: 34px;
+    background-color: #FDF1EB;
+} 
+
+.btn:hover{    
+    background-color: #FDF1EB !important;
+}
+
+.dropdown-item:hover{
+    background-color: gray;
+}
+
 /*Screen Desktop*/
-@media (min-width: 768px) { 
+@media (min-width: 1200px) { 
     .navbar {
         position: fixed;
         width: 220px;
@@ -67,10 +109,14 @@ li:hover{
     .navbar-brand{
         display: none;
     }    
+
+    .PageTrabalhos{        
+        margin-left: 220px;  
+    }
 }
 
 /*Screen Mobile*/
-@media (max-width: 768px) {     
+@media (max-width: 1200px) {     
 
     .navbar-brand-desktop{
         display: none;        
@@ -95,5 +141,5 @@ li:hover{
 
     .rectangleMenu{
         background-image: none;
-    }    
+    }   
 }
