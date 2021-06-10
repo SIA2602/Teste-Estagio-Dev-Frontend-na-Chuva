@@ -8,21 +8,21 @@ a{
     font-style: normal;
     font-weight: bold;
     color: #725C5C !important;
-    font-size: 15px;
+    font-size: 0.9375em;
     margin-left: 15px;    
 }
 
 h1{
     font-family: 'Roboto';
     font-style: normal;
-    font-size: 22px;
+    font-size: 1.375em;
     color: #725C5C;
 }
 
 h6{
     font-family: 'Roboto';
     font-style: normal;
-    font-size: 14px;
+    font-size: 0.875em;
     color: #725C5C;    
 }
 
@@ -67,6 +67,12 @@ h6{
     align-items: center; 
 }
 
+.alignCenterMobile{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
 .navbar{
     -webkit-box-shadow: 0px 0px 18px -4px rgba(0,0,0,1);
     -moz-box-shadow: 0px 0px 18px -4px rgba(0,0,0,1);
@@ -83,10 +89,11 @@ li:hover{
     width: 97px;
     height: 34px;
     background-color: #FDF1EB;
+    margin-bottom: 10px;
 } 
 
 .btn:hover{    
-    background-color: #FDF1EB !important;
+    background-color: #FDF1EB !important;    
 }
 
 .dropdown-item:hover{
@@ -141,5 +148,11 @@ li:hover{
 
     .rectangleMenu{
         background-image: none;
-    }   
+    } 
+    
+    .alignCenterMobile{
+        display: block;
+        justify-content: center;
+        align-items: center; 
+    }
 }
