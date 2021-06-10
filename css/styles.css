@@ -15,14 +15,30 @@ a{
 h1{
     font-family: 'Roboto';
     font-style: normal;
-    font-size: 1.375em;
+    font-size: 22px;
     color: #725C5C;
+}
+
+h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 20px;
+    color: #ED7839;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    color: aliceblue;    
 }
 
 h6{
     font-family: 'Roboto';
     font-style: normal;
-    font-size: 0.875em;
+    font-size: 14px;
     color: #725C5C;    
 }
 
@@ -32,7 +48,7 @@ h6{
 
 .PageTrabalhos{
     width: auto;
-    height: 100vh;
+    height: auto;
     background-color: aliceblue;         
 }
 
@@ -67,9 +83,8 @@ h6{
     align-items: center; 
 }
 
-.alignCenterMobile{
-    display: flex;
-    justify-content: center;
+.alignVertical{
+    display: flex;    
     align-items: center; 
 }
 
@@ -100,8 +115,18 @@ li:hover{
     background-color: gray;
 }
 
+.btn-orange{
+    background-color: #ED7839;  
+    width: auto;     
+}
+
+.btn-orange:hover{
+    background-color: #ED7839 !important; 
+    opacity: 0.6;    
+}
+
 /*Screen Desktop*/
-@media (min-width: 1200px) { 
+@media (min-width: 768px) { 
     .navbar {
         position: fixed;
         width: 220px;
@@ -123,7 +148,7 @@ li:hover{
 }
 
 /*Screen Mobile*/
-@media (max-width: 1200px) {     
+@media (max-width: 768px) {     
 
     .navbar-brand-desktop{
         display: none;        
@@ -148,11 +173,5 @@ li:hover{
 
     .rectangleMenu{
         background-image: none;
-    } 
-    
-    .alignCenterMobile{
-        display: block;
-        justify-content: center;
-        align-items: center; 
-    }
+    }   
 }

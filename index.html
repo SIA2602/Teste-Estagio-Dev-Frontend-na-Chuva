@@ -17,7 +17,7 @@
     </head>
 
     <body> 
-        <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">   
                 <div class="navbar-brand rectangleMenu alignCenter" style="font-size: 2.25em; color: aliceblue;" href="#"><b>SLACA 2019</b></div>                    
                 <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,11 +58,12 @@
             </div>
         </nav>       
 
-        <div class="PageTrabalhos">             
+        <div class="PageTrabalhos">  
+            <!--Titulo Publicacao -->           
             <div class="tituloTrabalhos">    
                 <div class="container">
-                    <div class="row">
-                        <div class="col-8"> 
+                    <div class="row alignVertical">
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-8"> 
                             <ul class="nav justify-content">
                                 <div class="nav-item">
                                     <h6>Anais do Simpósio Latino Americano de Ciências de Alimentos</h6> 
@@ -72,8 +73,8 @@
                             </ul>
                         </div>
 
-                        <div class="col alignCenterMobile">
-                            <ul class="nav justify-content-end">                                  
+                        <div class="col">
+                            <ul class="nav justify-content-end">  
                                 <div class="nav-item">
                                     <div class="dropdown">
                                         <button class="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -83,25 +84,58 @@
                                           <div class="dropdown-item" href="#"><h6 style="font-family: 'Quicksand'; color: black;">PT, BR</h6></div>
                                           <div class="dropdown-item" href="#"><h6 style="font-family: 'Quicksand'; color: black;">EN, EUA</h6></div>                              
                                         </ul>
-                                    </div>
-                                </div>
+                                    </div>                                   
+                                </div>  
+                                
                                 <div class="nav-item">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-                                                <h6 style="font-family: Quicksand; color: black; text-align: right; width: auto;">Bem vindo!</h6>
-                                                <h6 style="font-family: Quicksand; color: black; text-align: right; margin-top: -7px; width: auto;">danilojose26@hotmail.com</h6>
-                                            </div>
-                                            <div class="col" style="margin-left: -15px;">
-                                                <img style="width: 30px; border-radius: 100%;" src="assets/img/profile.jpg">
-                                            </div>
+                                    <ul class="nav justify-content-end">
+                                        <div class="nav-item" style="margin-left: 30px;">
+                                            <h6 style="font-family: Quicksand; color: black; text-align: right; width: auto;">Bem vindo!</h6>
+                                            <h6 style="font-family: Quicksand; color: black; text-align: right; margin-top: -7px; width: auto;">danilojose26@hotmail.com</h6>
                                         </div>
-                                    </div>
-                                </div>                   
+                                        <div class="nav-item">
+                                            <img style="width: 30px; border-radius: 100%; margin-left: 5px;" src="assets/img/profile.jpg">
+                                        </div>
+                                    </ul>                                    
+                                </div>  
                             </ul>
                         </div>
                     </div>
                 </div> 
+            </div> 
+            
+            <!--Espaco do video, detalhes e demais itens do mesmo quadro --> 
+            <div style="margin-left: 20px;">
+                <div class="container">
+                    <div class="row alignCenter">
+                        <div class="col-sm-11 col-md-8">
+                            <h2><b>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</b></h2> 
+                        </div>
+    
+                        <div class="col">
+                            <ul class="nav justify-content-end">  
+                                <div class="nav-item">
+                                    <button type="button" class="btn btn-orange"><h4><img src="assets/img/downloadIcon.png"> Download</h4></button>
+                                    <button type="button" class="btn btn-orange"><h4><img src="assets/img/star.png"></h4></button>
+                                    <button type="button" class="btn btn-orange"><h4><img src="assets/img/doi.png"></h4></button>
+                                    <h4 style="color: #ED7839; margin-left: -15px;">COMO CITAR ESSE TRABALHO?</h4>
+                                </div>
+                            </ul>                                                        
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8">                        
+                            <img src="assets/img/vídeo overlay.png" class="img-fluid">
+                        </div>
+    
+                        <div class="col">
+                            <img src="assets/img/vídeo overlay.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
             </div>            
         </div>
 
@@ -114,3 +148,5 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
+
+  
