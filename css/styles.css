@@ -68,11 +68,11 @@ p{
 }
 
 .marginLateralDireita{
-    margin-left: 40px;
+    margin-left: 2vw;
 }
 
 .marginLateralEsquerda{
-    margin-right: 20px;
+    margin-right: 1vw;
 }
 
 .PageVazia{
@@ -227,5 +227,5 @@ iframe{
     .size-card-detalhes{
         width: auto;
         height: 439px;
-    }
+    }   
 }
