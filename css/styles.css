@@ -42,6 +42,13 @@ h6{
     color: #725C5C;    
 }
 
+p{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 12px;
+    color: black;
+}
+
 .m-0{
     color: gray;
 }
@@ -57,7 +64,15 @@ h6{
     height: auto;
     background-color: #FDF1EB;
     padding-top: 5px;   
-    padding-left: 20px; 
+    padding-left: 40px; 
+}
+
+.marginLateralDireita{
+    margin-left: 40px;
+}
+
+.marginLateralEsquerda{
+    margin-right: 20px;
 }
 
 .PageVazia{
@@ -125,6 +140,28 @@ li:hover{
     opacity: 0.6;    
 }
 
+.size-card-detalhes{
+    width: 242px;
+    height: 439px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+    background: #E7E7E7;  
+    border-radius: 4px;    
+} 
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #BFBFBF;
+    border-radius: 4px;      
+}
+
+iframe{    
+    height: 439px !important;
+}
+
 /*Screen Desktop*/
 @media (min-width: 768px) { 
     .navbar {
@@ -174,4 +211,21 @@ li:hover{
     .rectangleMenu{
         background-image: none;
     }   
+
+    .tituloTrabalhos{         
+        padding-left: 0px; 
+    }
+
+    .marginLateralDireita{
+        margin-left: 0px;
+    }
+
+    .marginLateralEsquerda{
+        margin-right: 0px;
+    }
+
+    .size-card-detalhes{
+        width: auto;
+        height: 439px;
+    }
 }
