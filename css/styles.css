@@ -54,7 +54,7 @@ p{
 
 .PageTrabalhos{
     width: auto;
-    height: auto;
+    height: 500vh;
     background-color: white;         
 }
 
@@ -143,6 +143,11 @@ li:hover{
     height: 439px;
 }
 
+.size-card-resumo{
+    width: auto;
+    height: auto;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 4px;
@@ -158,6 +163,17 @@ li:hover{
 
 iframe{    
     height: 439px !important;
+}
+
+.card-header{
+    background-color: #FDF1EB;
+}
+
+.ocultLinetext{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 }
 
 /*Screen Desktop*/
