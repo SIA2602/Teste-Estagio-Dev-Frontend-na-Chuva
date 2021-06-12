@@ -27,6 +27,13 @@ h2{
     padding-bottom: 15px;
 }
 
+h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 18px;
+    color: #ED7839;
+}
+
 h4{
     font-family: 'Roboto';
     font-style: normal;
@@ -50,6 +57,13 @@ p{
 
 .m-0{
     color: gray;
+    z-index: 99;
+}
+
+.divisor{
+    border-top: 1px solid #E7E7E7;
+    max-width: 70vw;
+    min-width: 50vw;
 }
 
 .PageTrabalhos{
@@ -241,5 +255,5 @@ iframe{
     .size-card-detalhes{
         width: auto;
         height: 439px;
-    }   
+    }     
 }
