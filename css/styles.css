@@ -209,7 +209,7 @@ iframe{
 .nopadding {
     padding: 0 !important;
     margin: 0 !important;
- }
+}
 
 /*Screen Desktop*/
 @media (min-width: 768px) { 

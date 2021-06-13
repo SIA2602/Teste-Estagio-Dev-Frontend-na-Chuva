@@ -1,6 +1,8 @@
 var idElementSelected = 'Trabalhos' //Item selecionado na pagina
 var idPgSelected = 'PageTrabalhos' //Id atual da pagina visivel
 var expandCardResumo = false //status do card resumo, se o mesmo esta expandido ou nao
+var isBold = false //status do texto em negrito
+var isItalic = false //status do texto em italico
 
 //Funcao usada para mostrar visualmente que uma opcao do menu foi clicada
 //idElement: id do menu clicado
@@ -56,4 +58,30 @@ function cardExpand() {
     styleSheet.type = "text/css"
     styleSheet.innerText = styles
     document.head.appendChild(styleSheet)
+}
+
+//Funcao para deixar o texto negrito
+function fontBold() {
+    if(!isBold){
+        document.getElementById("exampleFormControlTextarea1").style.fontWeight = "bold";
+    }
+
+    else{
+        document.getElementById("exampleFormControlTextarea1").style.fontWeight = "normal";     
+    }
+
+    isBold = !isBold;
+}
+
+//Funcao para deixar o texto em italico
+function fontItalic() {
+    if(!isItalic){
+        document.getElementById("exampleFormControlTextarea1").style.fontStyle = "italic";
+    }
+
+    else{
+        document.getElementById("exampleFormControlTextarea1").style.fontStyle = "normal";     
+    }
+
+    isItalic = !isItalic;
 }
