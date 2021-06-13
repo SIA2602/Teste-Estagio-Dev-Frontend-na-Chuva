@@ -103,3 +103,57 @@ function sendButton() {
     document.getElementById("setText").innerHTML = "criar novo tópico"; //muda texto do botao
     document.getElementById("criaTopico").style.width = "235px"
 }
+
+//Funcao que adiciona os card de perguntas do usuario
+function addDoubt() {     
+    const app = document.getElementById('cardUsuario')
+    const card = document.createElement('div')
+    card.setAttribute('class', 'card card-body')
+    card.setAttribute('style', 'margin-top: 30px; background-color: #ebebeb;')
+    app.appendChild(card)    
+
+    const fundo = document.createElement('div')
+    fundo.setAttribute('class', 'blurCard')    
+    card.appendChild(fundo)    
+
+    const assunto = document.createElement('h4')     
+    assunto.setAttribute('class', 'tituloH4') 
+    assunto.textContent = "Assunto da pergunta aparece aqui"
+    fundo.appendChild(assunto)
+
+    const nome = document.createElement('h6')     
+    nome.setAttribute('class', 'tituloH6') 
+    nome.textContent = "Carlos Henrique Santos"
+    fundo.appendChild(nome)
+
+    const texto = document.createElement('h6')     
+    texto.setAttribute('class', 'tituloTexto') 
+    texto.textContent = "Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo..."
+    fundo.appendChild(texto)   
+
+    const backgroundCard = document.createElement('div')
+    backgroundCard.setAttribute('class', 'backgroundCard')        
+    card.appendChild(backgroundCard)
+
+    const positionRelative = document.createElement('div')
+    positionRelative.setAttribute('class', 'position-relative')        
+    backgroundCard.appendChild(positionRelative)
+
+    const primeiroPlano = document.createElement('div')
+    primeiroPlano.setAttribute('class', 'position-absolute top-50 start-50 translate-middle')        
+    positionRelative.appendChild(primeiroPlano)
+
+    const imageFeedback = document.createElement('div')     
+    imageFeedback.setAttribute('class', 'imagemFeedback mx-auto')     
+    primeiroPlano.appendChild(imageFeedback)
+
+    const waitFeedback = document.createElement('h4')     
+    waitFeedback.setAttribute('class', 'mensagemPrimeiroPlano') 
+    waitFeedback.textContent = "Aguardando feedback dos autores"
+    primeiroPlano.appendChild(waitFeedback)
+
+    const editarTopico = document.createElement('h4')     
+    editarTopico.setAttribute('class', 'mensagemEditarTopico alignCenter') 
+    editarTopico.textContent = "Editar tópico"
+    primeiroPlano.appendChild(editarTopico)
+}

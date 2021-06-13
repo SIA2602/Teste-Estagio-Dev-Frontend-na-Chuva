@@ -244,8 +244,8 @@
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label"><h4 style="color: #ED7839; margin-bottom: -10px;"><b>Assunto</b></h4></label>
                                             <input class="form-control" id="exampleFormControlInput1" placeholder="Defina um tópico sucinto para notificar os autores..." style="font-size: 14px; height: 39px; font-family: Quicksand; color: #4D4D4D;">
-                                          </div>
-                                          <div class="mb-3">
+                                        </div>
+                                        <div class="mb-3">
                                             <label for="exampleFormControlTextarea1" class="form-label"><h4 style="color: #ED7839; margin-bottom: -10px;"><b>Conteúdo</b></h4></label>  
                                               
                                             <div class="card">                                                
@@ -263,14 +263,14 @@
                                                             <div class="col">
                                                                 <ul class="nav justify-content-end nopadding">  
                                                                     <div class="nav-item">
-                                                                        <button type="button" onclick="sendButton()" class="btn btn-orange" style="background-image: linear-gradient(#FEB254, #F0813D); height: 31px !important; width: 205px !important; border-radius: 0px;"><h4>Enviar</h4></button>
+                                                                        <button type="button" onclick="sendButton(), addDoubt()" class="btn btn-orange" style="background-image: linear-gradient(#FEB254, #F0813D); height: 31px !important; width: 205px !important; border-radius: 0px;"><h4>Enviar</h4></button>
                                                                     </div>
                                                                 </ul>                                                                 
                                                             </div>
                                                         </div>
                                                     </div>                                                    
                                                 </div>
-                                              </div>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -283,6 +283,9 @@
                                             <hr class="m-0" />                               
                                         </div>
                                     </div> 
+
+                                    <!--Espaco onde ficarao os card de duvidas do usuario submetidos -->
+                                    <div id="cardUsuario" style="margin-top: 30px;"></div>
                                     
                                     <!--Espaco Comentarios dos Autores sobre perguntas-->
                                     <div style="margin-top: 30px;">
