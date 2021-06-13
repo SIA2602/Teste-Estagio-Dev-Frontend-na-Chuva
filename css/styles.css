@@ -112,6 +112,12 @@ p{
     align-items: center; 
 }
 
+.alignLeft{
+    display: flex;
+    justify-content: start;
+    align-items: initial; 
+}
+
 .alignVertical{
     display: flex;    
     align-items: center; 
@@ -152,6 +158,16 @@ li:hover{
     opacity: 0.6;    
 }
 
+.btn-more{
+    background-color: transparent;  
+    width: auto;     
+}
+
+.btn-more:hover{
+    background-color: white !important; 
+    opacity: 0.2;    
+}
+
 .size-card-detalhes{
     width: 242px;
     height: 439px;
@@ -189,6 +205,11 @@ iframe{
     -webkit-box-orient: vertical;  
     overflow: hidden;
 }
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
 
 /*Screen Desktop*/
 @media (min-width: 768px) { 
