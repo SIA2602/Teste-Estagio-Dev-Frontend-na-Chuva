@@ -85,3 +85,21 @@ function fontItalic() {
 
     isItalic = !isItalic;
 }
+
+//Funcao responsavel por fazer aparecer na tela a caixa para escrever as duvidas
+function criaTopico(idButton) {
+    document.getElementById("capaDiscussoes").style.display = "none";
+    document.getElementById("sendSuccess").style.display = "none";
+    document.getElementById("sendDoubt").style.display = "block";
+    document.getElementById(idButton).style.display = "none";
+}
+
+//Funcao responsavel por ocultar caixa para escrever duvidas e deixar visivel a mensagem de enviado com sucesso
+function sendButton() {
+    document.getElementById("sendDoubt").style.display = "none";
+    document.getElementById("sendSuccess").style.display = "block";    
+    document.getElementById("capaDiscussoes").style.display = "none";   
+    document.getElementById("criaTopico").style.display = "block"; //mostra botao 
+    document.getElementById("setText").innerHTML = "criar novo tópico"; //muda texto do botao
+    document.getElementById("criaTopico").style.width = "235px"
+}

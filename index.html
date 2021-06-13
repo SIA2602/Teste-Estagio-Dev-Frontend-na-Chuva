@@ -204,7 +204,7 @@
                                 </div>
                                 <div class="card-body mx-auto" style="background-color: white;">                                                                 
                                     <!--Espaco Compartilhe suas ideias ou dúvidas com os autores!-->
-                                    <div>
+                                    <div id="capaDiscussoes">
                                         <div class="alignCenter">
                                             <h3 class="alignCenter"><b>Compartilhe suas ideias ou dúvidas com os autores!</b></h3>
                                         </div>
@@ -218,10 +218,29 @@
                                         <div class="alignCenter">
                                             <h6 style="text-align: center; font-family: 'Quicksand'; color: #5C5C5C; margin-top: 35px; max-width: 626px;">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</h6>
                                         </div>
-                                    </div>    
+                                    </div>  
+                                    
+                                    <!--Espaco Seu tópico foi enviado com sucesso! :D-->
+                                    <div id="sendSuccess" style="margin-bottom: 70px;">
+                                        <div class="alignCenter">
+                                            <h3 class="alignCenter"><b>Seu tópico foi enviado com sucesso! :D</b></h3>
+                                        </div> 
+
+                                        <div class="alignCenter">
+                                            <h6 style="text-align: center; font-family: 'Quicksand'; color: #5C5C5C; margin-top: 5px!important;">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</h6>
+                                        </div>
+
+                                        <div>
+                                            <h6 style="text-align: center; font-family: 'Quicksand'; color: #F48F44; margin-top: 30px;"><b><u>Descubra outros trabalhos!</u><b></h6>
+                                        </div>
+                                    </div>
 
                                     <!--Espaco para enviar alguma duvida aos autores-->
-                                    <div>
+                                    <div id="sendDoubt">
+                                        <div class="alignCenter" style="margin-bottom: 10px;">
+                                            <h6 style="font-size: 14px; font-family: Quicksand; color: #4D4D4D;">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h6>
+                                        </div>
+                                        
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label"><h4 style="color: #ED7839; margin-bottom: -10px;"><b>Assunto</b></h4></label>
                                             <input class="form-control" id="exampleFormControlInput1" placeholder="Defina um tópico sucinto para notificar os autores..." style="font-size: 14px; height: 39px; font-family: Quicksand; color: #4D4D4D;">
@@ -244,7 +263,7 @@
                                                             <div class="col">
                                                                 <ul class="nav justify-content-end nopadding">  
                                                                     <div class="nav-item">
-                                                                        <button type="button" class="btn btn-orange" style="background-image: linear-gradient(#FEB254, #F0813D); height: 31px !important; width: 205px !important; border-radius: 0px;"><h4>Enviar</h4></button>
+                                                                        <button type="button" onclick="sendButton()" class="btn btn-orange" style="background-image: linear-gradient(#FEB254, #F0813D); height: 31px !important; width: 205px !important; border-radius: 0px;"><h4>Enviar</h4></button>
                                                                     </div>
                                                                 </ul>                                                                 
                                                             </div>
@@ -259,7 +278,7 @@
                                     <div style="margin-top: 30px;">
                                         <div class="position-relative">
                                             <div class="position-absolute top-50 start-50 translate-middle" style="z-index: 100;">
-                                                <button type="button" class="btn btn-orange" style="background-image: linear-gradient(#FEB254, #F0813D);"><h4><img src="assets/img/icon - criar.png" style="margin-right: 6px;">criar tópico</h4></button>
+                                                <button type="button" class="btn btn-orange" id="criaTopico" onclick="criaTopico(this.id)" style="background-image: linear-gradient(#FEB254, #F0813D);"><h4 id="setText"><img src="assets/img/icon - criar.png" style="margin-right: 6px;">criar tópico</h4></button>
                                             </div>              
                                             <hr class="m-0" />                               
                                         </div>
