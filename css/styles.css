@@ -158,6 +158,17 @@ li:hover{
     opacity: 0.6;    
 }
 
+.btn-violet{
+    background-color: rgb(113, 71, 142);  
+    width: 200px;    
+    margin-top: 10px; 
+}
+
+.btn-violet:hover{
+    background-color: rgb(113, 71, 142) !important; 
+    opacity: 0.6;    
+}
+
 .btn-more{
     background-color: transparent;  
     width: auto;     
@@ -290,6 +301,10 @@ iframe{
 
     .PageTrabalhos{        
         margin-left: 220px;  
+    }
+
+    footer{
+        margin-left: 220px;
     }
 }
 
